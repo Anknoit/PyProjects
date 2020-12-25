@@ -2,7 +2,7 @@
 """
 Created on Mon Aug  3 19:39:20 2020
 
-@author: CG-DTE
+@author: ANKIT KUMAR JHA
 """
 import random
 
