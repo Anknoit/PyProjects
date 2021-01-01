@@ -1,0 +1,82 @@
+How to use the module in your own python code:
+
+>>> from colored import fg, bg, attr
+>>>
+>>> print ('%s Hello World !!! %s' % (fg(1), attr(0)))
+ Hello World !!!
+>>>
+>>> print ('%s%s Hello World !!! %s' % (fg(1), bg(15), attr(0)))
+ Hello World !!!
+
+Use description:
+
+>>> print ('%s%s Hello World !!! %s' % (fg('white'), bg('yellow'), attr('reset')))
+ Hello World !!!
+>>>
+>>> print ('%s%s Hello World !!! %s' % (fg('orchid'), attr('bold'), attr('reset')))
+ Hello World !!!
+>>>
+>>> color = bg('indian_red_1a') + fg('white')
+>>> reset = attr('reset')
+>>> print (color + 'Hello World !!!' + reset)
+Hello World !!!
+
+Or use HEX code:
+
+>>> color = fg('#C0C0C0') + bg('#00005f')
+>>> res = attr('reset')
+>>> print (color + "Hello World !!!" + res)
+Hello World !!!
+
+Or the convenient stylize(text, *styles) wrapper to save some keystrokes:
+
+>>> import colored
+>>> from colored import stylize
+>>> print(stylize("This is green.", colored.fg("green")))
+This is green.
+>>> print("This is not.")
+This is not.
+>>> angry = colored.fg("red") + colored.attr("bold")
+>>> print(stylize("This is angry text.", angry))
+This is angry text.
+>>> print(stylize("This is VERY angry text.", angry, colored.attr("underlined")))
+This is VERY angry text.
+>>> print("But this is not.")
+But this is not.
+
+Or the variant stylize_interactive(text, *styles) for readline-friendliness:
+
+>>> import colored, sys
+>>> from colored import stylize_interactive, fg
+>>> sys.ps1 = stylize_interactive("myPrompt: ", fg('red'))
+myPrompt:
+
+Use directly like colorama but with more colors:
+
+>>> from colored import fore, back, style
+>>>
+>>> print (fore.LIGHT_BLUE + back.RED + style.BOLD + "Hello World !!!" + style.RESET)
+
+Import colored module:
+
+>>> import colored
+>>>
+>>> colored.fg(1)
+'\x1b[38;5;1m'
+>>>
+>>> colored.fg(257)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "/usr/lib64/python2.7/site-packages/colored/colored.py", line 381, in fg
+    return colored(color).foreground()
+  File "/usr/lib64/python2.7/site-packages/colored/colored.py", line 350, in foreground
+    color = self.reserve_paint[str(self.color)]
+KeyError: '257'
+>>>
+>>> colored.bg(30)
+'\x1b[48;5;30m'
+>>>
+>>> colored.fore.BLUE
+'\x1b[38;5;4m'
+
+ etc.
