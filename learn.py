@@ -2,7 +2,7 @@
 """
 Created on Mon Aug  3 19:39:20 2020
 
-@author: ANKIT KUMAR JHA
+@author: CG-DTE
 """
 import random
 
@@ -334,3 +334,16 @@ while k<=50:
     k+=2
 else:
     print("K less than 50")
+
+# DOCSTRING 
+def definition(a):
+    """
+    Returns square of the value input
+    """
+    return a**2
+help(definition)
+
+#PRINT SEP
+help(print)
+print(1,2,3,4,5,6,7, sep="<")
+
