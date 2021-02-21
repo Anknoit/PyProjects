@@ -343,7 +343,9 @@ def definition(a):
     return a**2
 help(definition)
 
-#PRINT SEP
-help(print)
+#PRINTING characters in between 
 print(1,2,3,4,5,6,7, sep="<")
 
+#How to print in on line without any space
+for n in range(0,5):
+    print(n, end='')
