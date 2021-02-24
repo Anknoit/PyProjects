@@ -349,3 +349,4 @@ print(1,2,3,4,5,6,7, sep="<")
 #How to print in on line without any space
 for n in range(0,5):
     print(n, end='')
+#Return statements take conditions to return Booleans as well as other things as per the code
