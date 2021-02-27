@@ -2,7 +2,7 @@
 """
 Created on Mon Aug  3 19:39:20 2020
 
-@author: CG-DTE
+@author: ANKIT JHA
 """
 import random
 
@@ -17,7 +17,7 @@ print(z)
 a=b=c="Shit"
 print(a+b+c)
 
-#A string and an integer cannot be added together
+#A string and an integer CANNOT be added together
 
 """
 GLOBAL VARIABLE NAUTANKI
@@ -350,3 +350,7 @@ print(1,2,3,4,5,6,7, sep="<")
 for n in range(0,5):
     print(n, end='')
 #Return statements take conditions to return Booleans as well as other things as per the code
+
+_runnerup = [3,6,3,7,8,4,2]
+print(_runnerup.sort())
+
