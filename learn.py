@@ -347,10 +347,15 @@ help(definition)
 print(1,2,3,4,5,6,7, sep="<")
 
 #How to print in on line without any space
-for n in range(0,5):
+for n in range(0,15,3): # 3 is common difference
     print(n, end='')
 #Return statements take conditions to return Booleans as well as other things as per the code
 
 _runnerup = [3,6,3,7,8,4,2]
 print(_runnerup.sort())
 
+#LAMBDA
+#takes any number of arguments but return one expression
+
+_lam = lambda a,b,c: a*b*c
+print(_lam(1,2,3))
