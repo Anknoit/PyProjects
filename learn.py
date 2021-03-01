@@ -267,6 +267,7 @@ print(thislist)             #if no array then it will remove last obj
 print(thislist+x)
 """
 Method	    Description
+-----------------------------------------------------
 append()	Adds an element at the end of the list
 clear()	    Removes all the elements from the list
 copy()	    Returns a copy of the list
@@ -278,6 +279,10 @@ pop()   	Removes the element at the specified position
 remove()	Removes the item with the specified value
 reverse()	Reverses the order of the list
 sort()   	Sorts the list
+            list.sort(reverse=True|False, key=myFunc)
+            Parameter	Description
+            reverse	Optional. reverse=True will sort the list descending. Default is reverse=False
+            key	Optional. A function to specify the sorting criteria(s)
 """
 
 """
@@ -352,7 +357,8 @@ for n in range(0,15,3): # 3 is common difference
 #Return statements take conditions to return Booleans as well as other things as per the code
 
 _runnerup = [3,6,3,7,8,4,2]
-print(_runnerup.sort())
+_runnerup.sort()
+print("\n",_runnerup)
 
 #LAMBDA
 #takes any number of arguments but return one expression
