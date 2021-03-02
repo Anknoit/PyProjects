@@ -359,6 +359,9 @@ for n in range(0,15,3): # 3 is common difference
 _runnerup = [3,6,3,7,8,4,2]
 _runnerup.sort()
 print("\n",_runnerup)
+_runnerup.append("7")
+_runnerup.pop(2)    #Remove using element array position
+_runnerup.remove("8")#Remove using the element itself
 
 #LAMBDA
 #takes any number of arguments but return one expression
