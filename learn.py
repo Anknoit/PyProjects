@@ -372,3 +372,26 @@ for n in range(0,15,3): # 3 is common difference
 
 _lam = lambda a,b,c: a*b*c
 print(_lam(1,2,3))
+
+#CLASSES/OBJECTS
+class person:
+    def __init__(self,name,age):  #3 arguments(object, info1,info2...)
+        """
+        The self Parameter
+        The self parameter is a reference to the current instance of the class, 
+        and is used to access variables that belongs to the class.
+
+        It does not have to be named self , you can call it whatever you like, but it has to
+        be the first parameter of any function in the class
+        """
+        self.name = name    
+        self.age = age
+    def _intro(self):
+        print("HelLo, Motherfucks my name is " +self.name+" My age is "+self.age)
+
+_man1 = person("Ankit", "20")
+_man1._intro()
+print(_man1.name)
+print(_man1.age)
+
+
