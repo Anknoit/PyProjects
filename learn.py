@@ -274,7 +274,9 @@ copy()	    Returns a copy of the list
 count()	    Returns the number of elements with the specified value
 extend()	Add the elements of a list (or any iterable), to the end of the current list
 index()  	Returns the index of the first element with the specified value
-insert()	Adds an element at the specified position
+insert()	Adds an element at the specified position   
+            list.insert(pos, elmnt)
+
 pop()   	Removes the element at the specified position
 remove()	Removes the item with the specified value
 reverse()	Reverses the order of the list
@@ -284,6 +286,15 @@ sort()   	Sorts the list
             reverse	Optional. reverse=True will sort the list descending. Default is reverse=False
             key	Optional. A function to specify the sorting criteria(s)
 """
+_runnerup = [3,6,3,7,8,4,2,5]
+_runnerup.sort()
+_runnerup.append(17)
+_runnerup.pop(2)                #Remove using element array position
+_runnerup.remove(8)             #Remove using the element itself.....Numeric value without ""
+_findpos = _runnerup.index(4)   #Find the position of specific element....string,number, list etc.
+_runnerup.insert(3,"Waah Bhaiya") #Insert element in specific position
+print("\nPosition of element:",_findpos)
+print("\n",_runnerup)
 
 """
 TUPLE
@@ -313,7 +324,7 @@ if _var==_var2: print("WOEW")
 print(_var) if _var < _var2 else print("_var2")
 
 if _var == _var2:
-    pass        # if CANNOT REMAIN EMPTY hence use pass to avoid err
+    pass        # if CANNOT REMAIN EMPTY! Hence use "pass" to avoid err
 
 
 #WHILE
@@ -355,13 +366,6 @@ print(1,2,3,4,5,6,7, sep="<")
 for n in range(0,15,3): # 3 is common difference
     print(n, end='')
 #Return statements take conditions to return Booleans as well as other things as per the code
-
-_runnerup = [3,6,3,7,8,4,2]
-_runnerup.sort()
-print("\n",_runnerup)
-_runnerup.append("7")
-_runnerup.pop(2)    #Remove using element array position
-_runnerup.remove("8")#Remove using the element itself
 
 #LAMBDA
 #takes any number of arguments but return one expression
