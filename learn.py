@@ -395,4 +395,8 @@ _man1._intro()
 print(_man1.name)
 print(_man1.age)
 
+#PRINTING RUNNERUP SCORE OUT OF NUMEROUS SCORES
+n = int(input())
+arr = map(int, input().split())
+print (sorted(set(arr))[-2])
 
