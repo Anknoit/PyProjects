@@ -285,6 +285,7 @@ sort()   	Sorts the list
             Parameter	Description
             reverse	Optional. reverse=True will sort the list descending. Default is reverse=False
             key	Optional. A function to specify the sorting criteria(s)
+    sorted() -ascending arrangement, alphabetical arrangement
 """
 _runnerup = [3,6,3,7,8,4,2,5]
 _runnerup.sort()
