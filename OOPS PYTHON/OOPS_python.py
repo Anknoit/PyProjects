@@ -4,14 +4,14 @@ class Employee:    #Class is a template that contains info that You can use in d
 #These are class variables  
     sal_increment = 2
     no_of_empl = 0
-    def __init__(self, fname, lname, salary): #THIS IS METHOD #This instance is for every employee, basic essential info that every employee should have
+    def __init__(self, fname, lname, salary): #THIS __init__ METHOD/CONSTRUCTOR #This instance is for every employee, basic essential info that every employee should have
 
-#These are instance variables    
+#These are instance variables = OBJECTS   
         self.fname = fname
         self.lname = lname
         self.salary = int(salary) 
         Employee.no_of_empl += 1
-        self.sal_increment = 5 #It will be taken before the class Employee, Comment this out to use sal_increment=2
+        self.sal_increment = 5 #It will be taken before the class Employee by the incrment(), Comment this out to use sal_increment=2
   
     def increment(self):    #THIS IS ANOTHER METHOD 
         self.salary = int(self.salary * self.sal_increment) #Here "self.sal_increment" is present in the instance which is the first place this function will search for "sal_incrment" if its not in it it will go for main class Employee and search. 
