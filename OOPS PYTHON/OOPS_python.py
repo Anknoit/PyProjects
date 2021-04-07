@@ -4,9 +4,9 @@ class Employee:    #Class is a template that contains info that You can use in d
 #These are class variables  
     sal_increment = 2
     no_of_empl = 0
-    def __init__(self, fname, lname, salary): #THIS __init__ METHOD/CONSTRUCTOR #This instance is for every employee, basic essential info that every employee should have
+    def __init__(self, fname, lname, salary): #THIS __init__  is CONSTRUCTOR #This instance is for every employee, basic essential info that every employee should have
 
-#These are instance variables = OBJECTS   
+#These are instance variables 
         self.fname = fname
         self.lname = lname
         self.salary = int(salary) 
@@ -20,8 +20,9 @@ class Employee:    #Class is a template that contains info that You can use in d
 
 #THIS IS DRIVER CODE 
 print(Employee.no_of_empl)
-ankit =Employee('Ankit', 'Jha', '1200000')
-billi =Employee('Billi', 'Jackson', '1200000')
+ankit = Employee('Ankit', 'Jha', '1200000')  #OBJECTS  
+billi = Employee('Billi', 'Jackson', '1200000') #OBJECTS
+
 
 print(Employee.__dict__)#TO display directory of class
 print("All information of Employee:",ankit.__dict__)   #To display whole directory of employee name Ankit
