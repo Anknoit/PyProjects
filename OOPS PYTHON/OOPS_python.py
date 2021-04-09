@@ -33,4 +33,20 @@ ankit.increment()
 print("New salary:",ankit.salary)
 
 
- 
+stud = []
+
+def entry_stud(n):
+    """
+    entry_stud() takes only one argument n, which is the number of entry
+    """
+    for n in range(0,n):
+        name_studs = input("NAME: ")
+        score_studs = input("SCORE: ")
+        name = name_studs
+        score = score_studs
+        comb = (name, score)
+        stud.append(comb)
+    return print(stud)
+    
+entry_stud(3)
+
