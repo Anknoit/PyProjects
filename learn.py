@@ -400,3 +400,9 @@ n = int(input())
 arr = map(int, input().split())
 print (sorted(set(arr))[-2])
 
+# ABOUT MAP FUNCTION
+def myfunc_map(a):
+    return len(a)
+x = map(myfunc_map, ("apple","banana","mango"))       #map(func, iterate)...here I want all my inpute to be float values
+print(list(x))   #converting map into list for readability
+                
